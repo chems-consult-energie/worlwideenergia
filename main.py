@@ -35,11 +35,9 @@ mail = Mail(energie_app)
 
 
 
-@energie_app.route("/")
-def homepage():
-    return render_template("homepage.html",pagetitle = "home")
 
-@energie_app.route("/index")
+
+@energie_app.route("/")
 def index():
     return render_template("index.html",pagetitle = "index.html")
 
